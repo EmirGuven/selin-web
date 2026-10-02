@@ -303,6 +303,35 @@ function resolveHomepageServiceSvg(icon?: string, slug?: string) {
       </div>
     </section>
 
+    <!-- ═══════ 7.5. PODCAST ═══════ -->
+    <section class="hp-section">
+      <div class="container hp-podcast">
+        <div class="hp-podcast__copy">
+          <span class="hp-tag">Podcast</span>
+          <h2>Podcastimi Dinleyin</h2>
+          <p>Terapi, ilişkiler ve ruh sağlığı üzerine konuştuğum bölümleri Spotify üzerinden dinleyebilirsiniz.</p>
+          <a
+            href="https://open.spotify.com/show/6tEZOAM48oe7pIbT47ZPSL"
+            target="_blank"
+            rel="noopener"
+            class="hp-btn hp-btn--outline"
+          >
+            Spotify'da Dinle →
+          </a>
+        </div>
+        <div class="hp-podcast__embed">
+          <iframe
+            src="https://open.spotify.com/embed/show/6tEZOAM48oe7pIbT47ZPSL?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            style="border-radius: 16px; border: none;"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- ═══════ 8. CTA BANT — admin'den ═══════ -->
     <section class="hp-cta" :style="homepageCtaStyle">
       <div class="container hp-cta__inner">

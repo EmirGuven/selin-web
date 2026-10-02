@@ -4675,6 +4675,34 @@ h1, h2, h3, h4 {
 .hp-svc:hover .hp-svc__arrow { opacity: 1; transform: translateX(0); }
 
 
+/* ── 7.5 PODCAST ── */
+.hp-podcast {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hp-podcast__copy p {
+  margin: 1rem 0 1.6rem;
+  color: var(--text-soft, #5b6460);
+  line-height: 1.6;
+}
+
+.hp-podcast__embed {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -25px rgba(0, 0, 0, 0.35);
+}
+
+.hp-podcast__embed iframe {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .hp-podcast { grid-template-columns: 1fr; gap: 2rem; }
+}
+
 /* ── 4. HAKKIMDA ── */
 .hp-about {
   display: grid;
