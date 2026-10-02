@@ -57,6 +57,9 @@ useHead(() => ({
   bodyAttrs: {
     class: "site-body"
   },
+  link: [
+    { rel: "icon", href: (siteSettings.value as any)?.favicon || "/favicon.ico", key: "favicon" },
+  ],
 }))
 
 useSchemaOrg([
@@ -68,7 +71,7 @@ useSchemaOrg([
     inLanguage: "tr-TR"
   },
   {
-    "@type": "MovingCompany",
+    "@type": "MedicalBusiness",
     name: siteMeta.name,
     description: siteMeta.description,
     url: siteMeta.url,

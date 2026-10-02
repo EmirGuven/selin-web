@@ -62,6 +62,7 @@ function initSchema(db: Database.Database) {
       custom_accent_contrast TEXT NOT NULL DEFAULT '#ffffff',
       hero_image TEXT NOT NULL DEFAULT '',
       og_image TEXT NOT NULL DEFAULT '',
+      favicon TEXT NOT NULL DEFAULT '',
       logo_type TEXT NOT NULL DEFAULT 'text',
       logo_image TEXT NOT NULL DEFAULT '',
       header_cta_label TEXT NOT NULL DEFAULT 'Randevu Al',
@@ -256,6 +257,7 @@ function initSchema(db: Database.Database) {
     try { db.exec("ALTER TABLE site_settings ADD COLUMN custom_primary_deep TEXT NOT NULL DEFAULT '#2a624d'") } catch {}
     try { db.exec("ALTER TABLE site_settings ADD COLUMN custom_surface_dark TEXT NOT NULL DEFAULT '#22382f'") } catch {}
     try { db.exec("ALTER TABLE site_settings ADD COLUMN custom_accent_contrast TEXT NOT NULL DEFAULT '#ffffff'") } catch {}
+    try { db.exec("ALTER TABLE site_settings ADD COLUMN favicon TEXT NOT NULL DEFAULT ''") } catch {}
   }
 
   // Varsayılan admin kullanıcısı (şifre: admin123 — ilk girişte değiştirilmeli)

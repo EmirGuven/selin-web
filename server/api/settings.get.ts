@@ -46,6 +46,7 @@ export default defineEventHandler(() => {
       accentContrast: row.custom_accent_contrast || "#1a1209",
     },
     ogImage: row.og_image,
+    favicon: row.favicon || "",
     logoType: row.logo_type || defaultLogoType,
     logoImage: row.logo_image || "",
     headerCtaLabel: row.header_cta_label || defaultHeaderCtaLabel,

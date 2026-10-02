@@ -157,6 +157,11 @@
             <label>OG / Paylaşım Görseli</label>
             <ImageUpload v-model="form.og_image" @uploaded="handleSave" />
           </div>
+          <div class="form-group" style="grid-column:1/-1">
+            <label>Favicon (Sekme İkonu)</label>
+            <p class="admin-form__hint">Kare bir görsel yükleyin (ör. 512×512 png). Tarayıcı sekmesinde görünür.</p>
+            <ImageUpload v-model="form.favicon" @uploaded="handleSave" />
+          </div>
         </div>
       </div>
 
@@ -208,6 +213,7 @@ const form = reactive({
   custom_surface_dark: "#2a3347",
   custom_accent_contrast: "#1a1209",
   og_image: "",
+  favicon: "",
 })
 
 watch(raw, (val) => {
@@ -232,6 +238,7 @@ watch(raw, (val) => {
   form.custom_surface_dark = val.custom_surface_dark || "#2a3347"
   form.custom_accent_contrast = val.custom_accent_contrast || "#1a1209"
   form.og_image = val.og_image || ""
+  form.favicon = val.favicon || ""
 }, { immediate: true })
 
 const saving = ref(false)

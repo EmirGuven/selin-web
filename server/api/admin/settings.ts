@@ -46,6 +46,7 @@ export default defineEventHandler(async (event) => {
       custom_surface_dark: row.custom_surface_dark || "#2a3347",
       custom_accent_contrast: row.custom_accent_contrast || "#1a1209",
       og_image: row.og_image || "",
+      favicon: row.favicon || "",
     }
   }
 
@@ -79,7 +80,8 @@ export default defineEventHandler(async (event) => {
         custom_primary_deep = ?,
         custom_surface_dark = ?,
         custom_accent_contrast = ?,
-        og_image = ?
+        og_image = ?,
+        favicon = ?
       WHERE id = 1
     `).run(
       body.name || "",
@@ -102,6 +104,7 @@ export default defineEventHandler(async (event) => {
       customSurfaceDark,
       customAccentContrast,
       body.og_image || "",
+      body.favicon || "",
     )
 
     return { success: true }
