@@ -39,7 +39,10 @@ jobs:
 
             if [ ! -d ".git" ]; then
               echo "⬇️ Cloning repository..."
-              git clone $REPO .
+              git init
+              git remote add origin $REPO
+              git fetch origin main
+              git reset --hard origin/main
             else
               echo "🔄 Pulling latest changes..."
               git reset --hard

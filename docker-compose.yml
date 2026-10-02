@@ -28,8 +28,10 @@ services:
       HOST: "0.0.0.0"
       PORT: "3000"
       UPLOADS_DIR: /app/public/uploads
-      JWT_SECRET: ${JWT_SECRET:-change_me_in_production_use_strong_secret}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-change_me_in_production_use_strong_secret}
       NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-https://klinikpsikologselinasyabagci.com}
+      TURNSTILE_SECRET_KEY: ${TURNSTILE_SECRET_KEY:-}
+      NUXT_PUBLIC_TURNSTILE_SITE_KEY: ${NUXT_PUBLIC_TURNSTILE_SITE_KEY:-}
 
     volumes:
       - type: bind
