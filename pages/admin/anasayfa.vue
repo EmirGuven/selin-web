@@ -159,14 +159,10 @@
             <label>Fotoğraf</label>
             <ImageUpload v-model="form.about_photo" @uploaded="handleSave" />
           </div>
-          <div class="form-group">
+          <div class="form-group" style="grid-column:1/-1" v-if="form.about_photo">
             <label>Fotoğraf Kırpma Odağı (Mobil)</label>
-            <p class="admin-form__hint">Mobil görünümde fotoğraf 16:9 oranında kırpılır. Yüzün kesilmesini önlemek için odak noktasını ayarlayın.</p>
-            <select v-model="form.about_photo_position">
-              <option value="center top">Üst</option>
-              <option value="center">Orta</option>
-              <option value="center bottom">Alt</option>
-            </select>
+            <p class="admin-form__hint">Mobil görünümde fotoğraf 16:9 oranında kırpılır. Soldaki fotoğrafa tıklayıp odak noktasını seçin, sağda mobil önizlemeyi görün.</p>
+            <AdminImageFocalPicker v-model="form.about_photo_position" :image-url="form.about_photo" />
           </div>
         </div>
       </div>
