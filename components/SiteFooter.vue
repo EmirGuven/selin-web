@@ -21,7 +21,7 @@ const instagram = computed(() => siteSettings.value?.social?.[0] || siteMeta.soc
 const linkedin = computed(() => siteSettings.value?.social?.[1] || siteMeta.social[1])
 const logoTagline = computed(() => siteSettings.value?.logoTagline || "Bireysel · Çift · Aile Terapisi")
 const footerTagline = computed(() =>
-  siteSettings.value?.footerTagline || "İstanbul Kadıköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum."
+  siteSettings.value?.footerTagline || "İstanbul Bakırköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum."
 )
 const logoType = computed(() => siteSettings.value?.logoType || "text")
 const logoImage = computed(() => siteSettings.value?.logoImage || "")

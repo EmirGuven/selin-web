@@ -221,12 +221,12 @@ function initSchema(db: Database.Database) {
       "Klinik Psikolog Selin Asya Bağcı",
       "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi ve travma/EMDR terapisi alanlarında İstanbul'da ve online olarak hizmet sunar.",
       "Bireysel · Çift · Aile Terapisi",
-      "İstanbul Kadıköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum.",
-      "+905321234567",
-      "0 532 123 45 67",
+      "İstanbul Bakırköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum.",
+      "+905541211301",
+      "0 554 121 13 01",
       "info@klinikpsikologselinasyabagci.com",
-      "Caferağa Mah. Mühürdar Cad. No:24 Kat:3 Daire:6",
-      "Kadıköy",
+      "Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2",
+      "Bakırköy",
       "İstanbul",
       "Hafta içi 09:00 - 18:00, randevu ile Cumartesi görüşme",
       "https://www.google.com/maps/search/?api=query&query=Klinik+Psikolog+Selin+Asya+Ba%C4%9Fc%C4%B1",
@@ -532,7 +532,7 @@ function initSchema(db: Database.Database) {
       "Klinik Psikoloji alanında uzman destek",
       "Bireysel, Çift, Aile ve Online Terapi",
       "Danışanlarıma güvenli, gizlilik ilkesine bağlı ve etik bir çerçevede eşlik etmeyi amaçlıyorum.",
-      "İstanbul Kadıköy'deki görüşme odamda ve online olarak bireysel, çift, aile, ergen ve travma odaklı terapi hizmeti sunuyorum.",
+      "İstanbul Bakırköy'deki görüşme odamda ve online olarak bireysel, çift, aile, ergen ve travma odaklı terapi hizmeti sunuyorum.",
       "",
       "Hizmetlerim",
       "İhtiyacınıza uygun terapi yaklaşımı",
@@ -851,12 +851,12 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
       "Klinik Psikolog Selin Asya Bağcı",
       "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi ve travma/EMDR terapisi alanlarında İstanbul'da ve online olarak hizmet sunar.",
       "Bireysel · Çift · Aile Terapisi",
-      "İstanbul Kadıköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum.",
-      "+905321234567",
-      "0 532 123 45 67",
+      "İstanbul Bakırköy'de ve online olarak bireysel, çift, aile ve travma odaklı terapi hizmeti sunuyorum.",
+      "+905541211301",
+      "0 554 121 13 01",
       "info@klinikpsikologselinasyabagci.com",
-      "Caferağa Mah. Mühürdar Cad. No:24 Kat:3 Daire:6",
-      "Kadıköy",
+      "Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2",
+      "Bakırköy",
       "İstanbul",
       "Hafta içi 09:00 - 18:00, randevu ile Cumartesi görüşme",
       "https://www.google.com/maps/search/?api=query&query=Klinik+Psikolog+Selin+Asya+Ba%C4%9Fc%C4%B1",
@@ -874,7 +874,7 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
       defaultFooterMenuTitle,
       DEFAULT_FOOTER_MENU_ITEMS_JSON,
       defaultFooterContactTitle,
-      "Kadıköy / İstanbul'da yüz yüze, Türkiye ve yurt dışından online görüşme imkanı.",
+      "Bakırköy / İstanbul'da yüz yüze, Türkiye ve yurt dışından online görüşme imkanı.",
       DEFAULT_FOOTER_LEGAL_LINKS_JSON,
     )
 
@@ -978,7 +978,7 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
 
     const fg4 = Number((insertGroup.run("Randevu ve İletişim", 4) as any).lastInsertRowid)
     insertItem.run(fg4, "Randevu almak için hangi bilgiler gerekli?", "Adınız, iletişim bilginiz ve kısa bir görüşme talebi randevu planlamak için yeterlidir.", 1)
-    insertItem.run(fg4, "Görüşme odanız nerede?", "Görüşme odam Caferağa Mah. Mühürdar Cad. No:24 Kat:3 Daire:6 Kadıköy / İstanbul adresindedir.", 2)
+    insertItem.run(fg4, "Görüşme odanız nerede?", "Görüşme odam Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2 Bakırköy / İstanbul adresindedir.", 2)
     insertItem.run(fg4, "Şehir dışından randevu alabilir miyim?", "Evet. Şehir dışında veya yurt dışında yaşıyorsanız online terapi ile düzenli görüşme imkanı sunuyorum.", 3)
 
     db.prepare("DELETE FROM legal_pages").run()
@@ -1000,7 +1000,7 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
       "İletişim bilgilerim üzerinden bana ulaşabilir, randevu formu ile görüşme talebinizi iletebilirsiniz.",
       heroImage,
       "İletişim Bilgileri",
-      "Telefon: 0 532 123 45 67 · Görüşme Odası: Caferağa Mah. Mühürdar Cad. No:24 Kat:3 Daire:6 Kadıköy / İstanbul",
+      "Telefon: 0 554 121 13 01 · Görüşme Odası: Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2 Bakırköy / İstanbul",
       "Randevu Talebi",
       "Bireysel, çift, aile veya online terapi talebiniz için temel bilgileri paylaşın, size geri dönelim.",
       "Alternatif Ulaşım",
@@ -1009,7 +1009,7 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
       "E-posta Gönder",
       "mailto:info@klinikpsikologselinasyabagci.com",
       "Telefon Et",
-      "tel:+905321234567",
+      "tel:+905541211301",
     )
 
     db.prepare(`
@@ -1130,7 +1130,7 @@ function applySelinAsyaBagciPreset(db: Database.Database) {
       "Klinik Psikoloji alanında uzman destek",
       "Bireysel, Çift, Aile ve Online Terapi",
       "Danışanlarıma güvenli, gizlilik ilkesine bağlı ve etik bir çerçevede eşlik etmeyi amaçlıyorum.",
-      "İstanbul Kadıköy'deki görüşme odamda ve online olarak bireysel, çift, aile, ergen ve travma odaklı terapi hizmeti sunuyorum.",
+      "İstanbul Bakırköy'deki görüşme odamda ve online olarak bireysel, çift, aile, ergen ve travma odaklı terapi hizmeti sunuyorum.",
       aboutImage,
       "Hizmetlerim",
       "İhtiyacınıza uygun terapi yaklaşımı",

@@ -4,15 +4,15 @@ export const siteMeta = {
   description:
     "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi ve travma/EMDR terapisi alanlarında İstanbul'da ve online olarak hizmet sunar.",
   url: "https://www.klinikpsikologselinasyabagci.com",
-  phone: "+905321234567",
-  phoneDisplay: "0 532 123 45 67",
+  phone: "+905541211301",
+  phoneDisplay: "0 554 121 13 01",
   email: "info@klinikpsikologselinasyabagci.com",
   ogImage: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1600&q=80",
   address: {
-    street: "Caferağa Mah. Mühürdar Cad. No:24 Kat:3 Daire:6",
+    street: "Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2",
     city: "İstanbul",
-    region: "Kadıköy",
-    postalCode: "34710"
+    region: "Bakırköy",
+    postalCode: "34147"
   },
   mapsUrl: "https://www.google.com/maps/search/?api=query&query=Klinik+Psikolog+Selin+Asya+Ba%C4%9Fc%C4%B1",
   workingHours: "Hafta içi 09:00 - 18:00, randevu ile Cumartesi görüşme",
