@@ -59,7 +59,7 @@
           </div>
           <div class="form-group">
             <label>E-posta</label>
-            <input v-model="form.email" type="email" placeholder="info@klinikpsikologselinasyabagci.com" />
+            <input v-model="form.email" type="email" placeholder="psikologselinasya@gmail.com" />
           </div>
         </div>
       </div>

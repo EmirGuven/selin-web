@@ -6,7 +6,7 @@ export const siteMeta = {
   url: "https://www.klinikpsikologselinasyabagci.com",
   phone: "+905541211301",
   phoneDisplay: "0 554 121 13 01",
-  email: "info@klinikpsikologselinasyabagci.com",
+  email: "psikologselinasya@gmail.com",
   ogImage: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1600&q=80",
   address: {
     street: "Zuhuratbaba Mah. Hüdaverdi Sok. No:45 Daire:2",
