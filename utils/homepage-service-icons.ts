@@ -22,7 +22,7 @@ export const homepageServiceIconOptions: Array<{ value: HomepageServiceIconId; l
   { value: "family", label: "Aile" },
   { value: "video", label: "Video / Online Terapi" },
   { value: "chat", label: "Konuşma / Danışmanlık" },
-  { value: "shield", label: "Güven / Travma" },
+  { value: "shield", label: "Güven / Güvenlik" },
   { value: "sun", label: "Güneş / İyi Oluş" },
   { value: "compass", label: "Pusula / Yönelim" },
   { value: "leaf", label: "Yaprak / Denge" },
@@ -58,8 +58,10 @@ export function getDefaultHomepageServiceIcon(slug?: string): HomepageServiceIco
       return "video"
     case "ergen-terapisi":
       return "chat"
-    case "travma-emdr-terapisi":
-      return "shield"
+    case "bilissel-davranisci-terapi":
+      return "compass"
+    case "psikodinamik-terapi":
+      return "leaf"
     default:
       return "brain"
   }

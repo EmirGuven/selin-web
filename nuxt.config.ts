@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "https://www.klinikpsikologselinasyabagci.com",
     name: "Klinik Psikolog Selin Asya Bağcı",
-    description: "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi ve travma/EMDR terapisi alanlarında İstanbul'da ve online olarak hizmet sunar.",
+    description: "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi, bilişsel davranışçı terapi ve psikodinamik terapi alanlarında İstanbul'da ve online olarak hizmet sunar.",
     defaultLocale: "tr"
   },
   robots: {

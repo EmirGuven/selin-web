@@ -2,7 +2,7 @@ export const siteMeta = {
   name: "Klinik Psikolog Selin Asya Bağcı",
   titleSuffix: "Klinik Psikolog Selin Asya Bağcı",
   description:
-    "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi ve travma/EMDR terapisi alanlarında İstanbul'da ve online olarak hizmet sunar.",
+    "Klinik Psikolog Selin Asya Bağcı; bireysel terapi, çift terapisi, aile terapisi, online terapi, ergen terapisi, bilişsel davranışçı terapi ve psikodinamik terapi alanlarında İstanbul'da ve online olarak hizmet sunar.",
   url: "https://www.klinikpsikologselinasyabagci.com",
   phone: "+905541211301",
   phoneDisplay: "0 554 121 13 01",
@@ -256,51 +256,98 @@ export const services = [
       "Klinik Psikolog Selin Asya Bağcı ile kimlik, okul ve ilişki konularında ergen ve genç yetişkin terapisi."
   },
   {
-    slug: "travma-emdr-terapisi",
-    title: "Travma ve EMDR Terapisi",
+    slug: "bilissel-davranisci-terapi",
+    title: "Bilişsel Davranışçı Terapi",
     shortDescription:
-      "Geçmiş travmatik deneyimlerin işlenmesinde EMDR destekli travma odaklı terapi.",
+      "Düşünce ve davranış örüntüleriyle çalışan, yapılandırılmış ve hedefe yönelik terapi yaklaşımı.",
     heroDescription:
-      "Travma odaklı çalışmalarda, danışanın hazır olduğu temposuyla geçmiş deneyimlerin güvenli biçimde işlenmesine eşlik ediyorum.",
+      "Bilişsel davranışçı terapide, sizi zorlayan düşünce ve davranış örüntülerini birlikte fark edip somut baş etme becerileri geliştiriyoruz.",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1200&q=80",
     benefits: [
       {
-        title: "Danışan Temposuna Saygılı Süreç",
-        text: "Travma çalışması, danışanın güvenlik hissi ve hazır olma durumu gözetilerek adım adım ilerler."
+        title: "Yapılandırılmış Çalışma",
+        text: "Her seans belirli bir gündem ve hedef doğrultusunda, somut adımlarla ilerler."
       },
       {
-        title: "Yapılandırılmış Değerlendirme",
-        text: "Çalışmaya başlamadan önce kapsamlı bir öykü alma ve hazırlık aşaması uygulanır."
+        title: "Fark Edilebilir İlerleme",
+        text: "Düşünce ve davranış örüntülerindeki değişim, süreç boyunca birlikte takip edilir."
       },
       {
-        title: "Bütüncül Takip",
-        text: "EMDR çalışmaları, gerektiğinde destekleyici bireysel terapi oturumlarıyla birlikte yürütülür."
+        title: "Günlük Yaşama Taşınabilir Beceriler",
+        text: "Seanslar arasında uygulayabileceğiniz pratik teknik ve alıştırmalarla çalışma desteklenir."
       }
     ],
     issues: [
-      "Geçmişte yaşanmış travmatik olaylar",
-      "Kaza, kayıp veya afet sonrası güçlükler",
-      "Tekrarlayan rahatsız edici anılar",
-      "Aşırı tetiklenme ve kaçınma davranışları",
-      "Çocukluk döneminden gelen zorlayıcı yaşantılar",
-      "Travma sonrası güven ve yakınlık güçlükleri"
+      "Yoğun kaygı ve kaygı bozuklukları",
+      "Olumsuz ve otomatik düşünce kalıpları",
+      "Panik atak ve kaçınma davranışları",
+      "Özgüven ve karar verme güçlükleri",
+      "Uyku ve stres yönetimi zorlukları",
+      "Belirli bir hedefe yönelik kısa süreli çalışma istekleri"
     ],
     process: [
       {
-        title: "Öykü Alma ve Hazırlık",
-        text: "Danışanın geçmişi ve mevcut kaynakları değerlendirilerek güvenli bir hazırlık aşaması oluşturulur."
+        title: "Değerlendirme ve Formülasyon",
+        text: "Yaşadığınız güçlükler, tetikleyen düşünce ve davranış örüntüleri birlikte haritalandırılır."
       },
       {
-        title: "Stabilizasyon Çalışmaları",
-        text: "Travma işleme çalışmalarına geçmeden önce duygu düzenleme becerileri güçlendirilir."
+        title: "Hedef Belirleme",
+        text: "Çalışma boyunca üzerinde ilerlenecek somut ve ölçülebilir hedefler netleştirilir."
       },
       {
-        title: "Travma İşleme Oturumları",
-        text: "Danışanın hazır olduğu temposuyla EMDR destekli işleme oturumları planlanır ve takip edilir."
+        title: "Uygulamalı Seanslar",
+        text: "Düşünce kayıtları ve davranışsal alıştırmalarla desteklenen düzenli seanslarla ilerleme sağlanır."
       }
     ],
     seoDescription:
-      "Klinik Psikolog Selin Asya Bağcı ile geçmiş travmatik deneyimlerde EMDR destekli travma odaklı terapi."
+      "Klinik Psikolog Selin Asya Bağcı ile düşünce ve davranış örüntüleri üzerine yapılandırılmış bilişsel davranışçı terapi."
+  },
+  {
+    slug: "psikodinamik-terapi",
+    title: "Psikodinamik Terapi",
+    shortDescription:
+      "Bugünkü güçlüklerin kökenindeki örüntüleri keşfetmeye odaklanan derinlemesine terapi yaklaşımı.",
+    heroDescription:
+      "Psikodinamik terapide, bugünkü güçlüklerinizin kökenindeki örüntüleri birlikte keşfederek kendinize dair daha derin bir anlayış geliştiriyoruz.",
+    image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+    benefits: [
+      {
+        title: "Derinlemesine Kendini Anlama",
+        text: "Tekrar eden duygu ve ilişki örüntülerinizin kökenine birlikte bakma imkanı sunar."
+      },
+      {
+        title: "Danışan Temposuna Saygılı Süreç",
+        text: "Çalışma, danışanın kendi hızında açılmasına ve keşfetmesine alan tanıyarak ilerler."
+      },
+      {
+        title: "Kalıcı Değişime Odaklı Çalışma",
+        text: "Yüzeysel belirtilerin ötesinde, altta yatan dinamiklerle çalışılarak kalıcı bir değişim hedeflenir."
+      }
+    ],
+    issues: [
+      "Tekrar eden ilişki örüntüleri",
+      "Kök nedenleri anlaşılamayan duygu durum güçlükleri",
+      "Erken yaşam deneyimlerinin güncel etkileri",
+      "Özgüven ve kimlikle ilgili derin arayışlar",
+      "Uzun süredir devam eden, nedeni belirsiz huzursuzluk",
+      "Kendini daha derinlemesine tanımak isteyenler"
+    ],
+    process: [
+      {
+        title: "Tanışma Görüşmesi",
+        text: "İlk görüşmede sizi dinler, gelme nedeninizi ve geçmiş yaşantılarınızı birlikte ele alırız."
+      },
+      {
+        title: "Keşif Süreci",
+        text: "Tekrar eden duygu ve ilişki örüntüleriniz, geçmiş deneyimlerinizle bağlantılı biçimde incelenir."
+      },
+      {
+        title: "Düzenli Derinlemesine Çalışma",
+        text: "Düzenli görüşmelerle kendinize dair farkındalığınız derinleşir ve kalıcı değişim desteklenir."
+      }
+    ],
+    seoDescription:
+      "Klinik Psikolog Selin Asya Bağcı ile kendinizi ve ilişki örüntülerinizi derinlemesine anlamaya odaklanan psikodinamik terapi."
   }
 ] as const
 
