@@ -3253,6 +3253,12 @@ h1, h2, h3, h4 {
   color: var(--accent-contrast);
   flex-shrink: 0;
 }
+.nh__logo-icon-img {
+  width: 1.3rem;
+  height: 1.3rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
 .nh__logo-text {
   display: flex;
   flex-direction: column;
