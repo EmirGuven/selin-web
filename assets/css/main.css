@@ -3521,6 +3521,12 @@ h1, h2, h3, h4 {
   color: var(--accent-contrast);
   flex-shrink: 0;
 }
+.sf__logo-icon-img {
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
 .sf__logo strong {
   display: block;
   font-size: 0.98rem;
