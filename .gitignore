@@ -1,0 +1,18 @@
+node_modules
+.nuxt
+.output
+.data
+dist
+.DS_Store
+.env
+.env.*
+
+# SQLite runtime database files
+data-db/*.db
+data-db/*.db-shm
+data-db/*.db-wal
+!data-db/.gitkeep
+
+# Yüklenen görseller (klasör yapısını koru, içeriği ignore et)
+public/uploads/*
+!public/uploads/.gitkeep
