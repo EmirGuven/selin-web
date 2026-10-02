@@ -221,7 +221,11 @@ function resolveHomepageServiceSvg(icon?: string, slug?: string) {
     <section class="hp-section hp-section--alt">
       <div class="container hp-about">
         <div class="hp-about__photo">
-          <img :src="about.photo || heroBackgroundImage" :alt="about.title || 'Selin Asya Bağcı'" />
+          <img
+            :src="about.photo || heroBackgroundImage"
+            :alt="about.title || 'Selin Asya Bağcı'"
+            :style="{ objectPosition: about.photoPosition || 'center' }"
+          />
           <div class="hp-about__exp">
             <strong>20+</strong>
             <span>Sektör Deneyimi</span>

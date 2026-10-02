@@ -41,6 +41,7 @@ export default defineEventHandler(() => {
       paragraph1: row.about_paragraph1,
       paragraph2: row.about_paragraph2,
       photo:      row.about_photo,
+      photoPosition: row.about_photo_position || "center",
     },
     services: {
       eyebrow:     row.services_eyebrow,

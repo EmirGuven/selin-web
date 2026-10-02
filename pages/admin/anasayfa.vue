@@ -159,6 +159,15 @@
             <label>Fotoğraf</label>
             <ImageUpload v-model="form.about_photo" @uploaded="handleSave" />
           </div>
+          <div class="form-group">
+            <label>Fotoğraf Kırpma Odağı (Mobil)</label>
+            <p class="admin-form__hint">Mobil görünümde fotoğraf 16:9 oranında kırpılır. Yüzün kesilmesini önlemek için odak noktasını ayarlayın.</p>
+            <select v-model="form.about_photo_position">
+              <option value="center top">Üst</option>
+              <option value="center">Orta</option>
+              <option value="center bottom">Alt</option>
+            </select>
+          </div>
         </div>
       </div>
 
@@ -417,6 +426,7 @@ const form = reactive({
   about_paragraph1:         '',
   about_paragraph2:         '',
   about_photo:              '',
+  about_photo_position:     'center',
   services_eyebrow:         '',
   services_title:           '',
   services_description:     '',
@@ -463,6 +473,7 @@ watch(raw, (val) => {
   form.about_paragraph1         = val.about_paragraph1         || ''
   form.about_paragraph2         = val.about_paragraph2         || ''
   form.about_photo              = val.about_photo              || ''
+  form.about_photo_position     = val.about_photo_position     || 'center'
   form.services_eyebrow         = val.services_eyebrow         || ''
   form.services_title           = val.services_title           || ''
   form.services_description     = val.services_description     || ''

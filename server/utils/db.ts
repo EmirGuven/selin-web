@@ -167,6 +167,7 @@ function initSchema(db: Database.Database) {
       about_paragraph1 TEXT NOT NULL DEFAULT '',
       about_paragraph2 TEXT NOT NULL DEFAULT '',
       about_photo TEXT NOT NULL DEFAULT '',
+      about_photo_position TEXT NOT NULL DEFAULT 'center',
       services_eyebrow TEXT NOT NULL DEFAULT 'Hizmetlerim',
       services_title TEXT NOT NULL DEFAULT 'İhtiyacınıza uygun terapi yaklaşımı',
       services_description TEXT NOT NULL DEFAULT 'Bireysel, çift, aile, online, ergen, bilişsel davranışçı ve psikodinamik terapide ihtiyacınıza uygun çalışma modelini birlikte belirliyoruz.',
@@ -566,6 +567,7 @@ function initSchema(db: Database.Database) {
   try { db.exec("ALTER TABLE homepage ADD COLUMN cta_primary_url TEXT NOT NULL DEFAULT '/iletisim'") } catch {}
   try { db.exec("ALTER TABLE homepage ADD COLUMN cta_secondary_label TEXT NOT NULL DEFAULT 'Bireysel Terapi'") } catch {}
   try { db.exec("ALTER TABLE homepage ADD COLUMN cta_secondary_url TEXT NOT NULL DEFAULT '/bireysel-terapi'") } catch {}
+  try { db.exec("ALTER TABLE homepage ADD COLUMN about_photo_position TEXT NOT NULL DEFAULT 'center'") } catch {}
 
   const legacyHeroImage = (db.prepare("SELECT hero_image FROM site_settings WHERE id = 1").get() as any)?.hero_image || ""
   if (legacyHeroImage) {
